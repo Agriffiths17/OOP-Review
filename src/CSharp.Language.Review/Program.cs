@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CSharp.Language.Review
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
         }
