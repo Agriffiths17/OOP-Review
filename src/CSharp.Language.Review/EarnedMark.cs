@@ -25,6 +25,11 @@ namespace CSharp.Language.Review
         public double WeightedPercent
         { get { return Percent * Weight / 100; } }
 
+        // This constructor calls another constructor
+        // BEFORE it runs it's own body of instructions.
+        // Hooking up constructors in this fashin is
+        // known as "daisy-chaning" your constructor
+        // calls.
         public EarnedMark(WeightedMark markableItem, int possible, double earned)
             :this (markableItem.Name, markableItem.Weight, possible,earned)
         {
