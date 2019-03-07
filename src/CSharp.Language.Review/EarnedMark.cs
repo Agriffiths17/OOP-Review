@@ -43,7 +43,8 @@ namespace CSharp.Language.Review
             Possible = Possible;
             Earned = earned;
         }
-
+        // Changing the behaviour of the base class by overriding some method
+        // is one way taht we accomplish polymorphism
         public override string ToString()
         {
             return string.Format("{0} ({1})\t - {2}% ({3}/{4}) \t- Weighted Mark {5}%",
